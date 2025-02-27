@@ -9,7 +9,7 @@ export default function parse(element, { document }) {
   // Create an array to hold all child elements for the cell
   const cellContent = Array.from(childElements);
 
-  // Place the array of child elements in the first cell of the two-dimensional array
+  // Place the array of child elements in the first cell of the table
   table[0][0] = cellContent;
 
   // Return the two-dimensional array

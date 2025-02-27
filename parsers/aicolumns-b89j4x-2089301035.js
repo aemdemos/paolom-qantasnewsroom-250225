@@ -13,9 +13,8 @@ export default function parse(element, { document }) {
   selectors.forEach((selector, index) => {
     const foundElements = element.querySelectorAll(selector);
     if (foundElements.length > 0) {
-      // If multiple elements are found, they should be placed in the same cell
-      // as an array. Otherwise, just place the single element in the cell.
-      table[0][index] = foundElements.length > 1 ? Array.from(foundElements) : foundElements[0];
+      // If multiple elements are found for the same cell, wrap them in an array
+      table[0][index] = foundElements.length === 1 ? foundElements[0] : Array.from(foundElements);
     }
   });
 
