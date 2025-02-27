@@ -1,15 +1,21 @@
 
 export default function parse(element, { document }) {
-  // Initialize the two-dimensional array with 1 row and 1 column
+  // Initialize a two-dimensional array with one row and one column
   const table = [[]];
 
-  // If the element has child nodes, add them to the array
-  if (element.hasChildNodes()) {
-    const children = Array.from(element.children);
-    // Since we only have 1 column, we create an array of child elements
-    // and add it as the first cell of the first row
-    table[0][0] = children;
-  }
+  // Use the :scope pseudo-class to query immediate children of the element
+  const children = element.querySelectorAll(':scope > *');
+
+  // Create an array to hold the child elements for the cell
+  const cellContent = [];
+
+  // Add all child elements to the cellContent array
+  children.forEach(child => {
+    cellContent.push(child);
+  });
+
+  // Add the cellContent array to the first cell of the table
+  table[0][0] = cellContent;
 
   // Return the two-dimensional array
   return table;

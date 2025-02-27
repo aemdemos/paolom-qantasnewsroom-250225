@@ -30,7 +30,7 @@ const importRules = {
     {
       type: 'aiheader-b89j4x-1102402271',
       selectors: [
-        'div.content-wrap'
+        '#main > div:nth-of-type(2)'
       ],
       variants: []
     },
@@ -51,91 +51,91 @@ const importRules = {
     {
       type: 'aicolumns-b89j4x-61971621',
       selectors: [
-        'div.main-section table:first-of-type'
+        'table:nth-of-type(1)'
       ],
       variants: []
     },
     {
       type: 'aicolumns-b89j4x-61971652',
       selectors: [
-        'div.main-section table:nth-of-type(2)'
+        'table:nth-of-type(2)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-83237627',
       selectors: [
-        'div.page-intro'
+        '.page-intro'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1467159295',
       selectors: [
-        'div.social'
+        '.social'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-83237596',
       selectors: [
-        'div.page-content'
+        '.page-content'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913533',
       selectors: [
-        'div.page-content p:nth-of-type(1)'
+        'p:nth-of-type(1)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913502',
       selectors: [
-        'div.page-content p:nth-of-type(2)'
+        'p:nth-of-type(2)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913471',
       selectors: [
-        'div.page-content p:nth-of-type(3)'
+        'p:nth-of-type(3)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913440',
       selectors: [
-        'div.page-content p:nth-of-type(4)'
+        'p:nth-of-type(4)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913409',
       selectors: [
-        'div.page-content p:nth-of-type(5)'
+        'p:nth-of-type(5)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913378',
       selectors: [
-        'div.page-content p:nth-of-type(6)'
+        'p:nth-of-type(6)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-2074746772',
       selectors: [
-        'div.sidebar-module h2'
+        '.module-title'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-2088480423',
       selectors: [
-        'ul.sidebar-posts'
+        '.sidebar-posts'
       ],
       variants: []
     }

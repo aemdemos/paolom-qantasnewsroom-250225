@@ -1,6 +1,6 @@
 
 export default function parse(element, { document }) {
-  // Initialize a two-dimensional array with one row and one column
+  // Initialize a two-dimensional array with 1 row and 1 column
   const table = [[]];
 
   // Use the :scope pseudo-class to query for immediate children of the element
