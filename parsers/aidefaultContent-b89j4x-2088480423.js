@@ -1,16 +1,21 @@
 
 export default function parse(element, { document }) {
-  // Initialize the two-dimensional array with 1 row and 1 column
+  // Initialize a two-dimensional array with one row and one column
   const table = [[]];
 
-  // If no child xpaths are provided, include all child elements of the element
-  const childElements = element.querySelectorAll(':scope > *');
+  // Use the :scope pseudo-class to query for immediate children of the element
+  const children = element.querySelectorAll(':scope > *');
 
-  // Create an array to hold all child elements for the cell
-  const cellContent = Array.from(childElements);
+  // Create an array to hold the child elements for the first cell
+  const firstCell = [];
 
-  // Place the array of child elements in the first cell of the table
-  table[0][0] = cellContent;
+  // Add all child elements to the first cell array
+  for (const child of children) {
+    firstCell.push(child);
+  }
+
+  // Add the first cell array to the first row of the table
+  table[0].push(firstCell);
 
   // Return the two-dimensional array
   return table;

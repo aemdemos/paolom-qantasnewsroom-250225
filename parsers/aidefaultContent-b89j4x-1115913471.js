@@ -4,13 +4,12 @@ export default function parse(element, { document }) {
   const table = [[]];
 
   // If no specific child xpaths are provided, include all child elements
-  // of the element passed into the function
-  const childElements = element.querySelectorAll(':scope > *');
+  const children = element.querySelectorAll(':scope > *');
 
-  // Create an array to hold all child elements for the cell
-  const cellContent = Array.from(childElements);
+  // Create an array to hold all child elements
+  const cellContent = Array.from(children);
 
-  // Place the array of child elements in the first cell of the table
+  // Place the array of child elements in the first cell of the two-dimensional array
   table[0][0] = cellContent;
 
   // Return the two-dimensional array

@@ -5,7 +5,7 @@
  * document and elements that should be transformed into blocks.
  */
 const importRules = {
-  root: '#main',
+  root: '.main-section #main',
   cleanup: {
     start: [
       'style',
@@ -30,7 +30,7 @@ const importRules = {
     {
       type: 'aiheader-b89j4x-1102402271',
       selectors: [
-        '#main > div:nth-of-type(2)'
+        '.container'
       ],
       variants: []
     },
@@ -51,14 +51,14 @@ const importRules = {
     {
       type: 'aicolumns-b89j4x-61971621',
       selectors: [
-        'table:nth-of-type(1)'
+        '.page-content table:first-of-type'
       ],
       variants: []
     },
     {
       type: 'aicolumns-b89j4x-61971652',
       selectors: [
-        'table:nth-of-type(2)'
+        '.page-content table:nth-of-type(2)'
       ],
       variants: []
     },
@@ -79,56 +79,57 @@ const importRules = {
     {
       type: 'aidefaultContent-b89j4x-83237596',
       selectors: [
-        '.page-content'
+        '.social',
+        '.print-friendly-version'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913533',
       selectors: [
-        'p:nth-of-type(1)'
+        '.page-content p:first-of-type'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913502',
       selectors: [
-        'p:nth-of-type(2)'
+        '.page-content p:nth-of-type(2)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913471',
       selectors: [
-        'p:nth-of-type(3)'
+        '.page-content p:nth-of-type(3)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913440',
       selectors: [
-        'p:nth-of-type(4)'
+        '.page-content p:nth-of-type(4)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913409',
       selectors: [
-        'p:nth-of-type(5)'
+        '.page-content p:nth-of-type(5)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913378',
       selectors: [
-        'p:nth-of-type(6)'
+        '.page-content p:nth-of-type(6)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-2074746772',
       selectors: [
-        '.module-title'
+        '.sidebar-module h2'
       ],
       variants: []
     },
