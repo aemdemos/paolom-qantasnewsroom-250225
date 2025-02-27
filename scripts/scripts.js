@@ -11,6 +11,7 @@ import {
   loadSection,
   loadSections,
   loadCSS,
+  loadScript,
 } from './aem.js';
 
 /**
@@ -91,6 +92,10 @@ async function loadEager(doc) {
   }
 }
 
+async function loadAssistant() {
+  return loadScript('https://main--sneak--aemdemos.aem.page/blocks/bookmarklet/client.js');
+}
+
 /**
  * Loads everything that doesn't need to be delayed.
  * @param {Element} doc The container element
@@ -108,6 +113,7 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
+  loadAssistant();
 }
 
 /**
