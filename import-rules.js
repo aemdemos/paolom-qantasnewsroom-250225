@@ -5,7 +5,7 @@
  * document and elements that should be transformed into blocks.
  */
 const importRules = {
-  root: '#main',
+  root: '.main-section #main',
   cleanup: {
     start: [
       'style',
@@ -30,112 +30,112 @@ const importRules = {
     {
       type: 'aiheader-b89j4x-1102402271',
       selectors: [
-        '#main > div.container'
+        '.container'
       ],
       variants: []
     },
     {
       type: 'aifooter-b89j4x-953139808',
       selectors: [
-        '#main > footer'
+        'footer'
       ],
       variants: []
     },
     {
       type: 'aicolumns-b89j4x-2089301035',
       selectors: [
-        '#main > header'
+        'header'
       ],
       variants: []
     },
     {
       type: 'aicolumns-b89j4x-61971621',
       selectors: [
-        '#main .main-section .page-content table:first-of-type'
+        '.page-content table:first-of-type'
       ],
       variants: []
     },
     {
       type: 'aicolumns-b89j4x-61971652',
       selectors: [
-        '#main .main-section .page-content table:nth-of-type(2)'
+        '.page-content table:nth-of-type(2)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-83237627',
       selectors: [
-        '#main .main-section .page-intro'
+        '.page-intro'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1467159295',
       selectors: [
-        '#main .main-section .social'
+        '.social'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-83237596',
       selectors: [
-        '#main .main-section .social'
+        '.page-content'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913533',
       selectors: [
-        '#main .main-section .page-content p:first-of-type'
+        '.page-content p:nth-of-type(1)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913502',
       selectors: [
-        '#main .main-section .page-content p:nth-of-type(2)'
+        '.page-content p:nth-of-type(2)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913471',
       selectors: [
-        '#main .main-section .page-content p:nth-of-type(3)'
+        '.page-content p:nth-of-type(3)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913440',
       selectors: [
-        '#main .main-section .page-content p:nth-of-type(4)'
+        '.page-content p:nth-of-type(4)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913409',
       selectors: [
-        '#main .main-section .page-content p:nth-of-type(5)'
+        '.page-content p:nth-of-type(5)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-1115913378',
       selectors: [
-        '#main .main-section .page-content p:nth-of-type(6)'
+        '.page-content p:nth-of-type(6)'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-2074746772',
       selectors: [
-        '#main .sidebar .module-title'
+        '.sidebar-module h2'
       ],
       variants: []
     },
     {
       type: 'aidefaultContent-b89j4x-2088480423',
       selectors: [
-        '#main .sidebar .sidebar-posts'
+        '.sidebar-posts'
       ],
       variants: []
     }

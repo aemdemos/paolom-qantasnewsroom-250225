@@ -3,15 +3,15 @@ export default function parse(element, { document }) {
   // Initialize the two-dimensional array with 1 row and 1 column
   const table = [[]];
 
-  // If no specific child xpaths are provided, include all child elements
-  const children = element.querySelectorAll(':scope > *');
+  // If the element has child nodes, add them to the array
+  if (element.hasChildNodes()) {
+    const children = element.children;
+    const cellContent = Array.from(children); // Convert HTMLCollection to Array
+    table[0].push(cellContent); // Add all child elements to the first cell
+  } else {
+    // If there are no child nodes, add the element itself to the array
+    table[0].push(element);
+  }
 
-  // Create an array to hold all child elements
-  const cellContent = Array.from(children);
-
-  // Place the array of child elements in the first cell of the two-dimensional array
-  table[0][0] = cellContent;
-
-  // Return the two-dimensional array
   return table;
 }

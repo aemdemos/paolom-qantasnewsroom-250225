@@ -11,10 +11,10 @@ export default function parse(element, { document }) {
 
   // Find elements using the CSS selectors and add them to the table
   selectors.forEach((selector, index) => {
-    const foundElements = element.querySelectorAll(selector);
-    if (foundElements.length > 0) {
-      // If multiple elements are found for the same cell, add them to an array first
-      const cellContent = Array.from(foundElements);
+    const elements = element.querySelectorAll(selector);
+    if (elements.length > 0) {
+      // If multiple elements should be placed in the same cell, add them to an array first
+      const cellContent = Array.from(elements);
       table[index][0] = cellContent;
     }
   });

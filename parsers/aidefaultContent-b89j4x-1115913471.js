@@ -9,7 +9,7 @@ export default function parse(element, { document }) {
   // Create an array to hold all child elements for the cell
   const cellContent = Array.from(children);
 
-  // Add the array of child elements to the first cell of the first row
+  // Add the array of child elements to the first cell of the table
   table[0][0] = cellContent;
 
   return table;
