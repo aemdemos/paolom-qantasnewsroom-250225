@@ -16,8 +16,8 @@
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --link-color: #323232;
+  --link-hover-color: #323232;
 
   /* fonts */
   --body-font-family: ciutadella-regular, sans-serif;
@@ -37,7 +37,7 @@
   --heading-font-size-xs: 16px;
 
   /* nav height */
-  --nav-height: 240px;
+  --nav-height: 195px;
 }
 
 /* fallback fonts */
@@ -56,17 +56,17 @@
 @media (width >= 900px) {
   :root {
     /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
+    --body-font-size-m: 20px;
+    --body-font-size-s: 18px;
+    --body-font-size-xs: 16px;
 
     /* heading sizes */
     --heading-font-size-xxl: 46px;
-    --heading-font-size-xl: 42px;
-    --heading-font-size-l: 38px;
-    --heading-font-size-m: 34px;
-    --heading-font-size-s: 30px;
-    --heading-font-size-xs: 26px;
+    --heading-font-size-xl: 26px;
+    --heading-font-size-l: 24px;
+    --heading-font-size-m: 22px;
+    --heading-font-size-s: 20px;
+    --heading-font-size-xs: 18px;
   }
 }
 
@@ -110,6 +110,7 @@ h6 {
   font-weight: 400;
   line-height: 1.25;
   scroll-margin: 40px;
+  text-align: center;
 }
 
 h1 { 

@@ -1,5 +1,5 @@
 main .section.hero-container {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .hero-container .hero-wrapper {
@@ -14,7 +14,7 @@ main .section.hero-container {
 }
 
 .hero h1 {
-  max-width: 1200px;
+  max-width: 730px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
@@ -22,8 +22,8 @@ main .section.hero-container {
   position: relative;
   bottom: -181px;
   background-color: #fff;
-  border-radius: 20px;
-  padding: 30px 100px;
+  border-radius: 8px;
+  padding: 30px 70px 0;
   color: #000;
   text-align: center;
 }
