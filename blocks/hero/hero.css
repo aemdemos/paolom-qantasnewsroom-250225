@@ -1,3 +1,7 @@
+main .section.hero-container {
+  margin-bottom: 100px;
+}
+
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -13,7 +17,15 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 60px;
   color: var(--background-color);
+  position: relative;
+  bottom: -181px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 100px;
+  color: #000;
+  text-align: center;
 }
 
 .hero picture {
